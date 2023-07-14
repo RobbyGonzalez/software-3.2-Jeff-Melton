@@ -4,12 +4,12 @@ import assets from '../assets.js';
 
 let objGenre1 = {
   genreName: "Comedy",
-  genreDescription:"These are movies that make liberal use of humor, slapstick, farce, and satire to allow the audience to laugh out loud. Good, classic comedies are watched again and again by those who love them.",
+  genreDescription: "These are movies that make liberal use of humor, slapstick, farce, and satire to allow the audience to laugh out loud. Good, classic comedies are watched again and again by those who love them.",
   genreIcon: assets.comedyIcon
 }
 let objGenre2 = {
   genreName: "Romance",
-  genreDescription:"These are movies that have classic romantic love as an overarching theme. They may or may not feature the 'Classic Hollywood Happy Ending.' Many epic romance movies end tragically.",
+  genreDescription: "These are movies that have classic romantic love as an overarching theme. They may or may not feature the 'Classic Hollywood Happy Ending.' Many epic romance movies end tragically.",
   genreIcon: assets.romanceIcon
 }
 
@@ -40,10 +40,10 @@ let objMovie4 = {
 function Container() {
   return (
     <div className={style.container}>
-    <Genre genre={objGenre1} movie1={objMovie1} movie2={objMovie2} />
-    <Genre genre={objGenre2} movie1={objMovie3} movie3={objMovie4} />  
+      <Genre genre={objGenre1} movie1={objMovie1} movie2={objMovie2} />
+      <Genre genre={objGenre2} movie1={objMovie3} movie2={objMovie4} />
     </div>
-    );
+  );
 };
 
 export default Container;
